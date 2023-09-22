@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "testng.dtd">
+<suite name="Sample Test Suite">
+	<listeners>
+		<listener class-name="main.java.config.SuiteListener"/>
+	</listeners>
+	<test name="GoogleSearch" enabled="true">
+		<parameter name="browserName" value="chrome" />
+		<classes>
+			<class name="test.java.main.GoogleTests"/>
+		</classes>
+	</test>
+	<test name="GoogleTranslate" enabled="false">
+		<parameter name="browserName" value="chrome" />
+		<classes>
+			<class name="test.java.main.GoogleTests" />
+		</classes>
+	</test>
+</suite>
